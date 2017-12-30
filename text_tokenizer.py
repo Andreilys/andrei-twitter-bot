@@ -2,7 +2,6 @@ import re
 
 
 def text_Parser(text):
-    print(text)
     new_text = open(text).read()
     no_punc_text = remove_punctuation(new_text)
     tokens = split_on_whitespace(no_punc_text)

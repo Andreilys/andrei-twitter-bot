@@ -24,15 +24,16 @@ class SentenceGenerator(object):
         for i in range(5):
             random_Number = random.randrange(0, length, 1)
             if i==0:
-                sentence = list(List[random_Number].values())[0] + " " + list(List[random_Number].keys())[0]
+                sentence = list(List[random_Number].values())[0].capitalize() + " " + list(List[random_Number].keys())[0].lower()
             else:
-                sentence = sentence + " " + list(List[random_Number].values())[0] + " " + list(List[random_Number].keys())[0]
+                sentence = sentence + " " + list(List[random_Number].values())[0].lower() + " " + list(List[random_Number].keys())[0].lower()
         return sentence
 
 
 if __name__ == '__main__':
     # tokenize the text
-    words = "humannature.txt"
+    #https://www.gutenberg.org/ebooks/2500
+    words = "siddhartha.txt"
     tokenized_text = text_Parser(words)
     sentence_generator = SentenceGenerator(10)
     List = sentence_generator.build_dict(tokenized_text)

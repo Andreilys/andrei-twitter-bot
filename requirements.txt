@@ -14,7 +14,7 @@ numpy==1.13.3
 oauthlib==2.0.6
 pandas==0.21.1
 protobuf==3.5.1
-PyJWT==1.5.3
+PyJWT==2.4.0
 pyparsing==2.2.0
 PySocks==1.6.8
 python-dateutil==2.6.1
